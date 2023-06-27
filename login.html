@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cisco Login </title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/divs.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">  
+        <div class="settings-div"> 
+            <a style="opacity: 0;"> <div class="back-div"> 
+                <img class="globe-icon" src="Images/back.png"> 
+                 <button class="secondary-button"> Indietro </button>
+            </div> </a>
+
+            <div class="language-div"> <img class="globe-icon" src="Images/globe.png"> IT </div>
+        </div>
+
+        <div class="logo-div">
+            <img class="logo-img" src="Images/Cisco-Logo.png">
+        </div>
+
+        <div class="content-div">
+            <h1> Accedi </h1>
+            <form action="../login.php" method="post">
+                <div>
+                <label for="username">Email:</label> <br>
+                <input type="text" id="username" name="email" placeholder="Email *"><br>
+                </div>
+
+                <div>
+                <label for="password"> Password:</label> <br>
+                <input type="password" id="password" name="password" placeholder="Password *">
+                </div>
+                <input type="submit" name="submit" class="primary-button" value="Accedi">
+            </form>
+
+            <div class="register-box"> 
+                <p> Non hai un account? </p>
+                <a href="registration.html"> <button class="secondary-button"> Registrati </button> </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
